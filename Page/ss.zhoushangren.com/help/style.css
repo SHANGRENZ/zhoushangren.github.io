@@ -1,0 +1,8 @@
+body{
+    max-width: 400px;
+    font-family: monospace;
+}
+img{
+    max-width: 100%;
+    margin: 4px 0px 4px;
+}
