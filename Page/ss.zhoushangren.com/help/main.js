@@ -18,3 +18,4 @@ function loading_img(){
         }
     }
 }
+loading_img();
