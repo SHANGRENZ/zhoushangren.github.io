@@ -1,6 +1,6 @@
 var i=document.getElementsByTagName('img');
 if(i.length===0){
-    return false;
+    return;
 }
 var z=i;
 for(var y=0;y<z.length;y++){
