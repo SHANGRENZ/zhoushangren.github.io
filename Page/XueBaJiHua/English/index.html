@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<title>English Page</title>
+<link rel="stylesheet" type="text/css" href="https://fonts.lug.ustc.edu.cn/css?family=Raleway%3A400%2C100%2C200%2C300%2C500%2C600%2C700%2C800%2C900&ver=4.6-alpha-37753" />
+<style>
+    body{
+        font-family: "Raleway","Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    div.body_div{
+        font-size: 18px;
+    }
+    div.body_div > h1{
+        border-left: solid 3px #696969;
+        padding-left: 8px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    div.body_div > h2{
+        padding-left: 14px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+    table,td,th{
+        border: solid 1px black;
+        border-collapse: collapse;
+        padding: 5px 20px 5px;
+        max-width: 100%;
+    }
+    div.body_div > p{
+        font-size: 18px;
+    }
+    div.body_div > p > b{
+        font-weight: 400;
+        font-size: 15px;
+        margin-right: 4px;
+    }
+    div.body_div > p.grammar_focus{
+        border: solid 1px black;
+        display: inline-block;
+        padding: 5px 11px 5px;
+        margin: 10px 0px 4px;
+    }
+    div.body_div > p.grammar_focus > b{
+        font-weight: 400;
+        padding: 0px 6px 0px;
+        font-size: 18px;
+    }
+    input.set_audio_loop{
+        background-color: white;
+        border: none;
+        border-bottom: solid 2px #b1b1b1;
+        outline: none;
+        color: #b1b1b1;
+        display: block;
+    }
+    /* 该死的IE8 */
+    #kill_ie8{
+        border: solid 2px black;
+        padding: 5px 40px 20px 20px;
+        background-color: white;
+        display: none;
+    }
+    p.kill_ie8_p{
+        font-size: 30px;
+        margin: 8px 0px 8px;
+    }
+    b.kill_ie8_b{
+        color: #696969;
+        display: block;
+        margin-bottom: 10px;
+    }
+    a.kill_ie8_a:visited,a.kill_ie8_a:link{
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        border: solid 2px black;
+    }
+</style>
+<script type="text/javascript">
+    function set_audio_loop(audio_id){
+        var is_undefined;
+        var is_undefined_code="if(typeof("+audio_id+")=='undefined'){is_undefined=true;}else{is_undefined=false;}";
+        eval(is_undefined_code);
+        if(is_undefined==true){
+            var code='var '+audio_id+'=true;';
+            eval(code);
+            document.getElementById(audio_id).loop='loop';
+            document.getElementById(audio_id+'_btn').style.color='#4285f4';
+            document.getElementById(audio_id+'_btn').style.borderBottomColor='#4285f4';
+            return false;
+        }
+        var loop_is_open;
+        var code='if('+audio_id+'==true){loop_is_open=true;}else{loop_is_open=false;}';
+        eval(code);
+        if(loop_is_open==true){
+            document.getElementById(audio_id).loop='';
+            document.getElementById(audio_id+'_btn').style.color='#b1b1b1';
+            document.getElementById(audio_id+'_btn').style.borderBottomColor='#b1b1b1';
+            code=audio_id+'=false;';
+        }else{
+            document.getElementById(audio_id).loop='loop';
+            document.getElementById(audio_id+'_btn').style.color='#4285f4';
+            document.getElementById(audio_id+'_btn').style.borderBottomColor='#4285f4';
+            code=audio_id+'=true;';
+        }
+        eval(code);
+    }
+    function set_kill_ie8(){
+        document.getElementById('kill_ie8').style.display='block';
+    }
+    function close_kill_ie8(){
+        document.getElementById('kill_ie8').style.display='none';
+    }
+</script>
+</head>
+<body>
+<!--
+毫无节操的IE8......
+-->
+<div id="kill_ie8">
+    <p class="kill_ie8_p">您正在使用过时的浏览器!</p>
+    <b class="kill_ie8_b">Internet Explorer已经过时,它不安全且缺少很多新的特性...</b>
+    <a href="http://www.google.cn/chrome/browser/desktop/" class="kill_ie8_a"><b>尝试Google Chrome</b></a>
+    <a href="javascript:close_kill_ie8();" class="kill_ie8_a">关闭</a>
+</div>
+<div class="body_div">
+    <h1>Unit 1.My name's Gina.</h1>
+    <h2>Grammar Focus</h2>
+    <table>
+        <tr>
+            <td>What's your name?</td>
+            <td>Alan./I'm Alan./My name's Alan.</td>
+        </tr>
+        <tr>
+            <td>What's his name?</td>
+            <td>He's Eric./His name's Eric.</td>
+        </tr>
+        <tr>
+            <td>What's hre name?</td>
+            <td>She's Mary./Her name's Mary.</td>
+        </tr>
+        <tr>
+            <td>Is he Jack?</td>
+            <td>Yes,he is./No,he isn't.His name's Mike.</td>
+        </tr>
+        <tr>
+            <td>Are you Helen?</td>
+            <td>Yes,I am./No,I'm not.I'm Gina.</td>
+        </tr>
+    </table>
+    <p class="grammar_focus">
+        <b>what's=what is</b>
+        <b>name's=name is</b>
+        <b>I'm=I am</b>
+        <b>he's=he is</b>
+        <b>she's=she is</b>
+    </p>
+    <h2>Role-play the conversation</h2>
+    <p>
+        <b>Linda:</b>Good afternoon!My name's Linda.Are you Helen?
+    </p>
+    <p>
+        <b>Helen:</b>Yes,I am.Nice to meet you,Linda.
+    </p>
+    <p>
+        <b>Linda:</b>Nice to meet you,too.What's her name?
+    </p>
+    <p>
+        <b>Helen:</b>She's Jane.
+    </p>
+    <p>
+        <b>Linda:</b>Is he Jack?
+    </p>
+    <p>
+        <b>Helen:</b>No,he isn't.His name's Mike.
+    </p>
+    <audio src="media/unit1.mp3" controls="controls" id="mp3_1">
+        你的浏览器太过陈旧,不支持播放音频.
+    </audio>
+    <input type="button" class="set_audio_loop" value="开启循环" onclick="set_audio_loop('mp3_1')" id="mp3_1_btn"/>
+    <h1>Unit 2.This is my sister.</h1>
+    <h2>Grammar Focus</h2>
+    <table>
+        <tr>
+            <td>This is my firend Jane.</td>
+            <td>That's my grandfather.</td>
+        </tr>
+        <tr>
+            <td>These are my brothers.</td>
+            <td>Those are my parents.</td>
+        </tr>
+        <tr>
+            <td>Who's she?</td>
+            <td>She's my sister.</td>
+        </tr>
+        <tr>
+            <td>Who's he?</td>
+            <td>He's my brother.</td>
+        </tr>
+        <tr>
+            <td>Who're they?</td>
+            <td>They're my grandparents.</td>
+        </tr>
+    </table>
+    <p class="grammar_focus">
+        <b>that's=that is</b>
+        <b>who're=who are</b>
+        <b>who's=who is</b>
+        <b>they're=they are</b>
+    </p>
+    <h2>Role-play the conversation</h2>
+    <p>
+        <b>Sally:</b>Good morning,Jane.
+    </p>
+    <p>
+        <b>Jane:</b>Good morning,Sally.
+    </p>
+    <p>
+        <b>Sally:</b>Oh,Jane,this is my sister Kate.Kate,this is my friend Jane.
+    </p>
+    <p>
+        <b>Kate:</b>Nice to meet you,Jane.
+    </p>
+    <p>
+        <b>Jane:</b>Nice to meet you,too.Are those your parents?
+    </p>
+    <p>
+        <b>Kate:</b>Yes,they are.
+    </p>
+    <p>
+        <b>Jane:</b>And who's he?
+    </p>
+    <p>
+        <b>Sally:</b>He's my brother,Paul.
+    </p>
+    <p>
+        <b>Jane:</b>Oh,I see.Well,have a good day!
+    </p>
+    <p>
+        <b>Sally/Kate:</b>Thanks!You,too.Bye!
+    </p>
+    <audio src="media/unit2.mp3" controls="controls" id="mp3_2">
+        你的浏览器太过陈旧,不支持播放音频.
+    </audio>
+    <input type="button" class="set_audio_loop" value="开启循环" onclick="set_audio_loop('mp3_2')" id="mp3_2_btn"/>
+    <h1>Unit 3.Is this your pencil?</h1>
+    <h2>Grammar Focus</h2>
+    <table>
+        <tr>
+            <td>Is this your pencil?</td>
+            <td>Yes,it is.It's mine./No,it isn't.It's hers.</td>
+        </tr>
+        <tr>
+            <td>Is this his green pen?</td>
+            <td>Yes,it is./No,it isn't.The blue pen is his.</td>
+        </tr>
+        <tr>
+            <td>Is that your schoolbag?</td>
+            <td>Yes,it is./No,it isn't.It's his.</td>
+        </tr>
+        <tr>
+            <td>Are these your books?</td>
+            <td>Yes,they are./No,they aren't.They're hers.</td>
+        </tr>
+        <tr>
+            <td>Are those her keys?</td>
+            <td>Yes,they are./No,they aren't.They're mine.</td>
+        </tr>
+    </table>
+    <p class="grammar_focus">
+        <b>it's=it is</b>
+        <b>isn't=is not</b>
+        <b>aren't=are not</b>
+    </p>
+    <h2>Role-play the conversation</h2>
+    <p>
+        <b>Teacher:</b>Hi,Anna.Are these your pencils?
+    </p>
+    <p>
+        <b>Anna:</b>No,they're Bob's.
+    </p>
+    <p>
+        <b>Teacher:</b>And is this his green pen?
+    </p>
+    <p>
+        <b>Anna:</b>No,it isn't.The blue pen is his.
+    </p>
+    <p>
+        <b>Teacher:</b>What about this dictionary?
+    </p>
+    <p>
+        <b>Anna:</b>It's Helen's.And the green pen is hers,too.
+    </p>
+    <p>
+        <b>Teacher:</b>And the eraser?Is that yours?
+    </p>
+    <p>
+        <b>Anna:</b>Yes,it is.
+    </p>
+    <p>
+        <b>Teacher:</b>Thank you for your help,Anna.
+    </p>
+    <p>
+        <b>Anna:</b>You're welcome.
+    </p>
+    <audio src="media/unit3.mp3" controls="controls" id="mp3_3">
+        你的浏览器太过陈旧,不支持播放音频.
+    </audio>
+    <input type="button" class="set_audio_loop" value="开启循环" onclick="set_audio_loop('mp3_3')" id="mp3_3_btn"/>
+    <h1>Unit 4.Where's my schoolbag?</h1>
+    <h2>Grammar Focus</h2>
+    <table>
+        <tr>
+            <td>Where's the map?</td>
+            <td>It's in your grandparents' room.</td>
+        </tr>
+        <tr>
+            <td>Where are my books?</td>
+            <td>They're on the sofa.</td>
+        </tr>
+        <tr>
+            <td>Where's his pencil box?</td>
+            <td>It's in his schoolbag.</td>
+        </tr>
+        <tr>
+            <td>Where's your ruler?</td>
+            <td>It's under the chair.</td>
+        </tr>
+        <tr>
+            <td>Where are their keys?</td>
+            <td>They're on the table.</td>
+        </tr>
+    </table>
+    <p class="grammar_focus">
+        <b>Where's=Where is</b>
+    </p>
+    <h2>Role-play the conversation</h2>
+    <p>
+        <b>Mom:</b>Come on,Jack!
+    </p>
+    <p>
+        <b>Jack:</b>Oh,no!Where's my bag?
+    </p>
+    <p>
+        <b>Mom:</b>Hmm...is it on your desk?
+    </p>
+    <p>
+        <b>Jack:</b>No.And it's not under the chair.
+    </p>
+    <p>
+        <b>Mom:</b>Oh!It's on the sofa.
+    </p>
+    <p>
+        <b>Jack:</b>Thank you,Mom.Err...where's the map?
+    </p>
+    <p>
+        <b>Mom:</b>I think it's in your grandparents' room.
+    </p>
+    <p>
+        <b>Jack:</b>Yes,it's on their bed!And my hat?
+    </p>
+    <p>
+        <b>Mom:</b>It's on your head!
+    </p>
+    <p>
+        <b>Jack:</b>Oh,yech!Haha!
+    </p>
+    <audio src="media/unit4.mp3" controls="controls" id="mp3_4">
+        您的浏览器太过陈旧,不支持播放音频.
+    </audio>
+    <input type="button" class="set_audio_loop" value="开启循环" onclick="set_audio_loop('mp3_4')" id="mp3_4_btn"/>
+    <h1>Unit 5.Do you have a soccer ball?</h1>
+    <h2>Grammar Focus</h2>
+    <table>
+        <tr>
+            <td>Do you have a baseball?</td>
+            <td>Yes,I do./No,I don't.I have a volleyball.</td>
+        </tr>
+        <tr>
+            <td>Do you have a ping-pong bat?</td>
+            <td>Yes,I do./No,I don't.I have a ping-pong ball.</td>
+        </tr>
+        <tr>
+            <td>Does she have a tennis ball?</td>
+            <td>Yes,she does./No,she doesn't.She has a baseball.</td>
+        </tr>
+        <tr>
+            <td>Does he have a soccer ball?</td>
+            <td>Yes,he does./No,he doesn't.He has two ping-pong bats.</td>
+        </tr>
+        <tr>
+            <td>Do they have a basketball?</td>
+            <td>Yes,they do./NO,they don't.They have a volleyball.</td>
+        </tr>
+    </table>
+    <p class="grammar_focus">
+        <b>don't=do not</b>
+        <b>doesn't=does not</b>
+    </p>
+    <h2>Role-play the conversation</h2>
+    <p>
+        <b>Cindy:</b>Hey,Helen,let's go!We're late!
+    </p>
+    <p>
+        <b>Helen:</b>OK.
+    </p>
+    <p>
+        <b>Cindy:</b>Do you have the baseball?
+    </p>
+    <p>
+        <b>Helen:</b>Yes,I do.It's in my bag.
+    </p>
+    <p>
+        <b>Cindy:</b>And where's our baseball bat?
+    </p>
+    <p>
+        <b>Helen:</b>Bill has it.
+    </p>
+    <p>
+        <b>Cindy:</b>Oh,yeah.And do you have your jacket?
+    </p>
+    <p>
+        <b>Helen:</b>Oh,no,I don't.It's on the chair.Let me get it.
+    </p>
+    <p>
+        <b>Cindy:</b>And your hat,too!
+    </p>
+    <p>
+        <b>Helen:</b>OK,I have my jacket and hat.Let's go!
+    </p>
+    <audio src="media/unit5.mp3" controls="controls" id="mp3_5">
+        您的浏览器太过陈旧,不支持播放音频.
+    </audio>
+    <input type="button" class="set_audio_loop" value="开启循环" onclick="set_audio_loop('mp3_5')" id="mp3_5_btn"/>
+</div>
+</body>
+<!--[if lt IE 8]>
+<script type="text/javascript">
+    set_kill_ie8();
+</script>
+<![endif]-->
+</html>
